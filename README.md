@@ -36,7 +36,7 @@ sudo apt full-upgrade
 Install `xsane`, `inotifywait`, `R`, and `curl`.
 
 ``` bash
-sudo apt-get install sane sane-utils libsane-extras xsane
+sudo apt-get install xsane
 sudo apt-get install inotify-tools
 sudo apt-get install r-base r-base-core r-base-dev
 sudo apt-get install libcurl4-openssl-dev
@@ -87,6 +87,8 @@ Install the following packages
 Some of these take a **VERY** long time to install from source on the
 Pis. It would be worth exploring installing binaries, especially for
 `dplyr` and `tidyr`.
+
+If a package fails to install, it is probably missing a dependency that needs to be separately installed. This might be a Linux package or an R package. For example, in Oct 2026 'libuvc-dev' needed to be separately installed with 'sudo apt-get install' and 'purl' needed to be installed in R.
 
 ## Run the set-up script
 
